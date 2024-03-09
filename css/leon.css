@@ -72,13 +72,13 @@ body {
 /* End Headerr */
 /* Start landing  */
 .landing {
-    background-image: url(../image/pexels-photo-4389560.webp);
+    background-image: url("../image/pexels-photo-4337999.jpg");
+    width: 100%;
     background-size: cover;
-    height: calc(100vh -64px);
+    background-repeat: no-repeat;
+    height: calc(100vh - 64px);
     margin: 0;
     position: relative;
-
-
 }
 
 .landing .intro-text {
@@ -145,7 +145,7 @@ body {
     width: 100%;
 }
 
-/* End Headerr */
+
 .header .links ul {
     content: "";
     list-style: none;
@@ -158,6 +158,40 @@ body {
     top: calc(100% + 15px);
     display: none;
     z-index: 1;
+}
+
+.header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+
+.header .links:hover ul {
+    display: block;
+
+}
+
+.header .links ul li a {
+    display: block;
+    padding: 15p;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+
+}
+
+.header .links ul li a:hover {
+    padding-left: 25px;
+
+
+}
+
+.header .links ul li:not(:last-child) {
+    border-bottom: 1px solid #333;
 }
 
 /* Start features */
